@@ -46,8 +46,7 @@ h1 {
 }
 
 .item-body {
-  display: inline-block;
-  color: #222222;  /* grey-ish color - check why not working - try w/ inline-block for span ??? */
+  color: #222222;  /* grey-ish color */
 }
 
 
