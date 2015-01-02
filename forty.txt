@@ -1,0 +1,6 @@
+# pakman manifest
+
+__file__.forty.html  forty.html.erb
+
+css/forty.css
+

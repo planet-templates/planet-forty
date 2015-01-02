@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset='utf-8'>
+   <meta name='generator' content='<%= Pluto.generator %>'>
+   <title><%= site.title %></title>
+
+   <%= stylesheet_link_tag 'css/forty' %>
+  </head>
+  <body>
+
+<h1><%= site.title %></h1>
+
+
+
+<%
+   items = site.items.latest.limit(24)
+   ItemCursor.new( items ).each do |item, new_date, new_feed|
+%>
+
+<article class='item'>
+
+<div class='feed-title'>
+  <%= link_to item.feed.title, item.feed.url %>
+  @<%= item.feed.key %>
+ <span class='item-timestamp'>
+   <%= item.published.strftime('%B %e, %Y - %H:%M') %> • 
+   <%= time_ago_in_words( item.published ) %>
+ </span>
+</div>
+
+
+<div>
+  <%= link_to item.title, item.url %>
+<span class='item-snippet item-body'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+<% if item.summary %>
+  <%= textify( item.summary )[0..140] %>
+<% elsif item.content %>
+  <%= textify( item.content )[0..140] %>
+<% else %>
+  -/-
+<% end %>
+</span>
+</div>
+
+
+</article><!-- item -->
+
+<% end %><!-- each item -->
+
+
+</body>
+</html>

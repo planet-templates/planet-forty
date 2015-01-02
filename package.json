@@ -1,0 +1,22 @@
+{
+  "name": "planet-forty",
+  "version": "0.1.0",
+  "description": "forty - planet template pack",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/planet-templates/planet-forty.git"
+  },
+  "keywords": [
+    "planet",
+    "pluto",
+    "forty",
+    "planet-templates"
+  ],
+  "author": "Gerald Bauer",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/planet-templates/planet-forty/issues"
+  },
+  "homepage": "https://github.com/planet-templates/planet-forty"
+}
+
