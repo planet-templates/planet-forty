@@ -19,34 +19,30 @@ h1 {
   text-align: center;
 }
 
-.new-date {
-  text-align: center;
-}
 
 .feed {
 } 
 
 .feed-title   {
-  margin-bottom: 4px;
+  font-weight: bold;
 }
 
-
-.item-title {
-  margin-top: 0;
-}
-
-.item-title .item-timestamp {
+.feed-title .feed-handle,
+.feed-title .item-timestamp {
   font-size: 12px; color: grey;
 }
 
 
+.item-title {
+}
 .item-body {
+  display: inline-block;
   color: #222222;
 }
 
 .item-body p {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* note: has no links for now; text gets "sanitized" 
@@ -61,16 +57,4 @@ h1 {
 */
 
 
-
-/* fix: tipo - use separator -aaa */
-.item-seperator {
-   /* border: 1px solid red; */
-   /* height: 1px; */
-   /* color: grey; */
-  
-   /* border: 0.5px solid grey; */
-  /* sorry - not working for now;
-   *  use none */
-  border: none;
-}
 

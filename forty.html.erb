@@ -22,7 +22,9 @@
 
 <div class='feed-title'>
   <%= link_to item.feed.title, item.feed.url %>
-  @<%= item.feed.key %>
+ <span class='feed-handle'> 
+  <%= link_to "@#{item.feed.key}", item.feed.url %>
+ </span>
  <span class='item-timestamp'>
    <%= item.published.strftime('%B %e, %Y - %H:%M') %> • 
    <%= time_ago_in_words( item.published ) %>
@@ -31,8 +33,10 @@
 
 
 <div>
+<span class='item-title'>
   <%= link_to item.title, item.url %>
-<span class='item-snippet item-body'>
+</span>
+<div class='item-body'>
 <!-- use 'smarter' algorithm for cutoff snippet text
    note: summary goes first; than try content -->
 <% if item.summary %>
@@ -42,7 +46,7 @@
 <% else %>
   -/-
 <% end %>
-</span>
+</div>
 </div>
 
 
