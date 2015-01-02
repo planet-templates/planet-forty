@@ -22,7 +22,7 @@ h1 {
 
 .item {
   padding: 10px;
-  border: 1px solid grey;
+  border: 1px solid #e1e8ed;   /* light grey-ish color */
   width: 560px;
   /* todo/fix: merge borders how ?? */
 }
@@ -44,9 +44,12 @@ h1 {
 
 .item-title {
 }
+
 .item-body {
-  color: #222222;
+  display: inline-block;
+  color: #222222;  /* grey-ish color - check why not working - try w/ inline-block for span ??? */
 }
+
 
 /* note: has no links for now; text gets "sanitized" 
 .item-body a,
