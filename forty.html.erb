@@ -34,15 +34,15 @@
 
 <div>
 <span class='item-title'>
-  <%= link_to item.title, item.url %>
+  <%= link_to item.title, item.url %> • 
 </span>
 <div class='item-body'>
 <!-- use 'smarter' algorithm for cutoff snippet text
    note: summary goes first; than try content -->
 <% if item.summary %>
-  <%= textify( item.summary )[0..140] %>
+  <%= strip_tags(textify( item.summary ))[0..140] %>
 <% elsif item.content %>
-  <%= textify( item.content )[0..140] %>
+  <%= strip_tags(textify( item.content ))[0..140] %>
 <% else %>
   -/-
 <% end %>
