@@ -34,9 +34,10 @@
 
 <div>
 <span class='item-title'>
-  <%= link_to item.title, item.url %> • 
+  <%= link_to item.title, item.url %>
 </span>
-<div class='item-body'>
+ • 
+<span class='item-body'>
 <!-- use 'smarter' algorithm for cutoff snippet text
    note: summary goes first; than try content -->
 <% if item.summary %>
@@ -46,7 +47,7 @@
 <% else %>
   -/-
 <% end %>
-</div>
+</span>
 </div>
 
 

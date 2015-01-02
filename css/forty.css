@@ -21,8 +21,10 @@ h1 {
 
 
 .item {
-  padding: 6px;
+  padding: 10px;
   border: 1px solid grey;
+  width: 560px;
+  /* todo/fix: merge borders how ?? */
 }
 
 
@@ -43,7 +45,6 @@ h1 {
 .item-title {
 }
 .item-body {
-  display: inline-block;
   color: #222222;
 }
 
