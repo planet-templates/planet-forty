@@ -8,6 +8,25 @@ web feeds. More [Pluto Project Site »](http://feedreader.github.io)
 
 ## Usage
 
+
+### Style Settings
+
+~~~
+$font-family:  Helvetica, sans-serif;
+
+$primary-color: black;
+
+
+$item-width:      560px;
+
+$item-border-color: #e1e8ed;   // light grey-ish color
+$item-body-color: #222222;     // black-ish color
+~~~
+
+[(Source: `css/_settings.scss`)](css/_settings.scss)
+
+
+
 ### Try It Yourself - How To Use the Top Template Pack
 
 If you want to try it yourself, install (fetch) the new template pack. Issue the command:

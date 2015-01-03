@@ -1,6 +1,8 @@
-# pakman manifest
+##############################################
+# forty planet templates - pakman manifest 
+#
 
 __file__.forty.html  forty.html.erb
 
-css/forty.css
+css/o/forty.css
 

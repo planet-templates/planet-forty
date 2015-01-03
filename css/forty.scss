@@ -1,0 +1,69 @@
+//////////////////////////////////////////////
+// Note:
+//  use (w/ option -C/--no-cache) e.g.
+//
+//   $ sass -C forty.scss o/forty.css
+//
+
+
+@import 'settings';
+
+
+body {
+  font-family: $font-family;
+  color: $primary-color;
+}  
+
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  
+  &:visited {
+    text-decoration: none;
+    color: $primary-color;
+  }
+  &:hover {
+    text-decoration: underline;
+    color: $primary-color;
+  }
+} // a
+
+
+.site-title {
+  text-align: center;
+}
+
+
+.timeline {
+  // use timeline container to center item boxes on screen 
+  width: $item-width+40px;   // e.g. 560+40=600
+  margin: 0px auto;
+
+  .item {
+    width: $item-width;
+    padding: 10px;
+    border: 1px solid $item-border-color;
+    // todo/fix: merge borders how ?? 
+
+    .item-header {
+      .feed-title {
+        font-weight: bold;
+      }
+      .feed-handle,
+      .item-timestamp {
+         font-size: 80%;
+         color: grey;
+      }
+    } // .item-header
+    
+    .item-body {
+      .item-title {
+      }
+      .item-body {
+        color: $item-body-color;
+      }
+    } // .item-body
+  } // .item
+} // .timeline
+
